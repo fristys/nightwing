@@ -1,0 +1,212 @@
+/*
+YUI 3.11.0 (build d549e5c)
+Copyright 2013 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/EInbV5DfGHOiMmvb1Xr-hnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+::-moz-selection { background: #BDC3C7; color: #2C3E50; text-shadow: none; }
+::selection { background: #BDC3C7; color: #2C3E50; text-shadow: none;}
+
+.container-custom {
+  width: 80%;
+}
+
+ul.inline {
+  text-align: center;
+}
+
+ul.inline li {
+  display: inline;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga", "dlig";
+  -webkit-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+   font-feature-settings: "liga", "dlig";
+   background:#FFF;
+   color: #2f3133;
+}
+
+a:link, a:visited {
+  -webkit-transition: all 0.272s ease-out;
+  -moz-transition: all 0.272s ease-out;
+  -o-transition: all 0.272s ease-out;
+  -ms-transition: all 0.272s ease-out;
+  transition: all 0.272s ease-out;
+}
+
+header {
+  background: #111 url('../img/heading.png') repeat-x bottom;
+  color: #FFF;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+  margin: 0; padding: 0;
+  border-bottom: 2px solid #C3C3C3;
+}
+
+header.other {
+  text-align: left;
+}
+
+header ul {
+  margin: 30px 0 30px 0;
+}
+
+header.other ul {
+  margin: 7% 0 0 0;
+  text-align: right;
+}
+
+header li {
+  display: inline-block;
+  margin-right: 2%;
+}
+
+header li:last-child {
+  margin-right: 0;
+}
+
+header h1, header h2 {
+  cursor: defualt;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+header h1 a:link, header h1 a:visited, header h1 a:hover {
+  font-family: 'Open Sans Bold', sans-serif;
+  color: #FFF;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0; padding: 0;
+  margin-top: 30px;
+}
+
+header h2 {
+  color: #C3C3C3;
+  margin-top: -1.5%;
+}
+
+header.other h2 {
+  margin-top: -1%;
+}
+
+a.download, a.download:visited {
+  display: block;
+  background: #2C3E50;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  color: #FFF;
+  text-decoration: none;
+  width: auto;
+  max-width: 250px;
+  padding: 10px 15px 10px 15px;
+  margin: 20px auto 5px auto;
+  border-radius: 10px;
+}
+
+a.download:hover {
+  background: #34495E;
+}
+
+.version {
+  color: #6A6A6A;
+}
+
+header li a:link, header li a:visited {
+  letter-spacing: 1px;
+  color: #C3C3C3;
+  text-decoration: none;
+}
+
+header li a:hover {
+  color: #FFF;
+}
+
+#content {
+  margin-top: 25px;
+}
+
+#content h3 {
+  font-family: 'Open Sans Bold', 'Open Sans', serif;
+  margin-bottom: 15px;
+}
+
+#content p {
+  color: #566061;
+}
+
+#content strong {
+  font-weight: bold;
+}
+
+#content a:link, #content a:visited {
+  color: #2980B9;
+  text-decoration: none;
+}
+
+#content a:hover {
+  color: #3498DB;
+}
+
+#content code {
+ font-family: 'Open Sans', Consolas, serif;
+ display: block;
+ width: 50%;
+ margin: 10px;
+ padding: 10px;
+ background: #C3C3C3;
+ color: #999;
+ overflow: hidden;
+ border-radius: 10px;
+}
+
+span.class-name {
+  font-weight: bold;
+  color: #2980B9;
+}
+
+span.value {
+  margin-left: 15px;
+  color: #333;
+}
+
+footer {
+  color: #999;
+  margin-top: 5%;
+  text-align: center;
+}
+
+footer a:link, footer a:visited {
+  color: #999;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #3498DB;
+}
