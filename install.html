@@ -20,26 +20,14 @@
 <![endif]-->
 </head>
 <body>
-  <header role="banner">
+  <header class="other" role="banner">
     <div class="container-custom">
       <div class="row">
-        <div class="span12">
+        <div class="span5">
           <h1><a href="index.html">Nightwing</a></h1>
           <h2>The most versatile Grid System on the Net</h2>
         </div>
-      </div>
-      <div class="row">
-        <div class="span12">
-          <a href="/build/latest.zip" class="download">Download Nightwing</a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span12 version">
-          Current version v1.0.1
-        </div>
-      </div>
-      <div class="row">
-        <nav class="span12">
+        <nav class="span7">
           <ul>
             <li><a href="https://github.com/fristys/nightwing">GitHub</a></li>
             <li><a href="install.html">Get Started</a></li>
@@ -53,26 +41,46 @@
 
   <div id="content" class="container-custom" role="main">
     <div class="row">
-      <div class="span4">
-        <h3>Most versatile ?</h3>
+      <div class="span12">
+        <h3>Getting started</h3>
         <p>
-          I know what you're thinking - "Why in the blue hell do you think that this grid is the most versatile of all ?".
-          Well, <strong>Nightwing</strong> is a small sized, flexible and super adaptable grid system. No more limits - you choose your own container width and the columns adjust accordingly. Impressed at least a bit ?
-          Let's <a href="install.html">get started</a>.
+          1. Make sure you <a href="/build/latest.zip">Downloaded Nightwing</a> <br /> <br />
+          2. Place the files in your website's css directory <br /> <br />
+          3. Copy the following code somewhere in your <strong>&lt;head&gt;</strong> tags :
+          <code>
+          <span class="value">
+          &lt;link rel=&quot;<span class="class-name">stylesheet</span>&quot; href=&quot;<span class="class-name">[path-to-css-directory]/nightwing-full-gutter.min.css</span>&quot; media=&quot;<span class="class-name">all</span>&quot;&gt;</span>
+          <br/><span class="value">
+          &lt;link rel=&quot;<span class="class-name">stylesheet</span>&quot; href=&quot;<span class="class-name">[path-to-css-directory]/reset.css</span>&quot; media=&quot;<span class="class-name">all</span>&quot;&gt;</span>
+          </code>
+
+          <i>Note: The reset.css is optional, but to have a fully functional Nightwing you need some kind of a browser defaults CSS reset.</i>
         </p>
       </div>
-      <div class="span4">
-        <h3>The power of simplicity</h3>
+    </div>
+    <div class="row">
+      <div class="span12">
+        <br />
+        <h3>Basic HTML template</h3>
         <p>
-          Have you ever wanted a grid system that doesn't require you to write complex class names or doesn't come with unwanted pre-set styles ?
-          <strong>Nightwing</strong> utilizes common grid practices in the simplest way possible to bring you a hassle-free development experience, while bringing familiar semantics to the table.
-          Read more about it in the <a href="documentation.html">documentation</a>.
+          <code>
+&lt;!doctype html&gt;<br /> &lt;html lang=&quot;en&quot;&gt;<br /> &lt;head&gt;<br />  <span class="value"> &lt;meta charset=&quot;<span class="class-name">UTF-8</span>&quot;&gt;</span><br />   <span class="value">&lt;title&gt;Document&lt;/title&gt;</span><br />   <span class="value">&lt;link rel=&quot;<span class="class-name">stylesheet</span>&quot; href=&quot;<span class="class-name">[path-to-css-directory]/nightwing-full-gutter.min.css</span>&quot; media=&quot;<span class="class-name">all</span>&quot;&gt; </span><br />   <span class="value">&lt;link rel=&quot;<span class="class-name">stylesheet</span>&quot; href=&quot;<span class="class-name">[path-to-css-directory]/reset.css</span>&quot; media=&quot;<span class="class-name">all</span>&quot;&gt;</span><br /> &lt;/head&gt;<br /> &lt;body&gt;<br />   <span class="value">&lt;div class=&quot;<span class="class-name">container-fluid</span>&quot;&gt;</span><br />     <span class="value">&lt;div class=&quot;<span class="class-name">row</span>&quot;&gt;</span><br />       <span class="value">&lt;div class=&quot;<span class="class-name">span12</span>&quot;&gt;Span 12&lt;/div&gt;</span><br />     <span class="value">&lt;/div&gt;</span><br />   <span class="value">&lt;/div&gt;</span><br /> &lt;/body&gt;<br /> &lt;/html&gt;
+          </code>
         </p>
       </div>
-      <div class="span4">
-        <h3>What is Nightwing ?</h3>
+    </div>
+    <div class="row">
+      <div class="span12">
+        <br />
+        <h3>Basic semantics</h3>
         <p>
-          Simply put, <strong>Nightwing</strong> is a 12 column grid system with an adaptable container width. From completely fluid (100% viewport) container size, to popular grid sizes (960px, 1020px 1140px) to your own custom container width size. Gutterless or not. The choice is entirely yours. See the <a href="examples.html">examples</a> to see how the grid system works.
+          Nightwing has very similar semantics to other grid systems. There's a container element, a row element that distinguishes different rows and a span element for each of the elements that span inside each row.<br/>
+          <br/>
+          Default container classes are : &nbsp;<i>.container-fluid</i>, &nbsp;<i>.container-960</i>, &nbsp;<i>.container-1020</i>&nbsp; and &nbsp;<i>.container-1140</i> <br/>To create your own, go to the <a href="documentation.html">documentation</a>.<br/>
+          <br/>
+          The default row class is : &nbsp;<i>.row</i><br/>
+          <br/>
+          Default span classes are : &nbsp;<i>.span12</i>, &nbsp;<i>.span11</i>, &nbsp;<i>.span10</i>, &nbsp;<i>.span9</i>, &nbsp;<i>.span8</i>, &nbsp;<i>.span7</i>, &nbsp;<i>.span6</i>, &nbsp;<i>.span5</i>, &nbsp;<i>.span4</i>, &nbsp;<i>.span3</i>, &nbsp;<i>.span2</i>&nbsp; and &nbsp;<i>.span1</i>
         </p>
       </div>
     </div>

@@ -20,26 +20,14 @@
 <![endif]-->
 </head>
 <body>
-  <header role="banner">
+  <header class="other" role="banner">
     <div class="container-custom">
       <div class="row">
-        <div class="span12">
+        <div class="span5">
           <h1><a href="index.html">Nightwing</a></h1>
           <h2>The most versatile Grid System on the Net</h2>
         </div>
-      </div>
-      <div class="row">
-        <div class="span12">
-          <a href="/build/latest.zip" class="download">Download Nightwing</a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span12 version">
-          Current version v1.0.1
-        </div>
-      </div>
-      <div class="row">
-        <nav class="span12">
+        <nav class="span7">
           <ul>
             <li><a href="https://github.com/fristys/nightwing">GitHub</a></li>
             <li><a href="install.html">Get Started</a></li>
@@ -53,26 +41,42 @@
 
   <div id="content" class="container-custom" role="main">
     <div class="row">
-      <div class="span4">
-        <h3>Most versatile ?</h3>
+      <div class="span12">
+        <h3>Running Nightwing under legacy browsers</h3>
         <p>
-          I know what you're thinking - "Why in the blue hell do you think that this grid is the most versatile of all ?".
-          Well, <strong>Nightwing</strong> is a small sized, flexible and super adaptable grid system. No more limits - you choose your own container width and the columns adjust accordingly. Impressed at least a bit ?
-          Let's <a href="install.html">get started</a>.
+          Nightwing is supported all the way up to IE7, but in case you want to run <strong>Nightwing</strong> under legacy browsers such as IE6 and below, you'll need to enable Attribute Selectors support. <br/>
+          To do that, I suggest you download <a href="http://selectivizr.com/">Selectivizr</a> and import it following their instructions.
         </p>
       </div>
-      <div class="span4">
-        <h3>The power of simplicity</h3>
+    </div>
+    <div class="row">
+      <div class="span12">
+        <br/>
+        <h3>Creating your own container</h3>
         <p>
-          Have you ever wanted a grid system that doesn't require you to write complex class names or doesn't come with unwanted pre-set styles ?
-          <strong>Nightwing</strong> utilizes common grid practices in the simplest way possible to bring you a hassle-free development experience, while bringing familiar semantics to the table.
-          Read more about it in the <a href="documentation.html">documentation</a>.
+          To create your own container with width you decide, just create a class with a name .container-xxxx and set a width for it. the "xxxx" part can be anything. <br/> <br/>
+          For example:
+          <code>
+            <span class="class-name">.container-custom</span> { <br/>
+              <span class="value">width: 80%</span>; <br/>
+            }
+          </code>
+
+          Now whenever you want to use the grid simply create a container element with this new class and insert row and span elements inside it. <strong>Nightwing</strong> will take care of the rest.
         </p>
       </div>
-      <div class="span4">
-        <h3>What is Nightwing ?</h3>
+    </div>
+    <div class="row">
+      <div class="span12">
+        <br/>
+        <h3>Customizing Nightwing</h3>
         <p>
-          Simply put, <strong>Nightwing</strong> is a 12 column grid system with an adaptable container width. From completely fluid (100% viewport) container size, to popular grid sizes (960px, 1020px 1140px) to your own custom container width size. Gutterless or not. The choice is entirely yours. See the <a href="examples.html">examples</a> to see how the grid system works.
+          Feel free to reverse engineer, tinker with and customize <strong>Nightwing</strong> as much as you want, but please mention the original when doing so. <br/>
+          In order to change the gutter sizes in the gutter-enabled version, you'd need to recalculate the width for each span value + an IE value for it as well. <br/> <br/>
+          The difference of the gutter IE value from the normal one is <i>0.053191489361702%</i> <br/>
+          The difference of the span width IE value from the normal one is <i>0.05319148936171%</i> <br/>
+          <br/>
+          It's not rocket science, really, just some basic calculator math :)
         </p>
       </div>
     </div>
