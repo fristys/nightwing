@@ -1,10 +1,11 @@
 /*
-YUI 3.11.0 (build d549e5c)
-Copyright 2013 Yahoo! Inc. All rights reserved.
+YUI 3.17.1 (build 0eb5a52)
+Copyright 2014 Yahoo! Inc. All rights reserved.
 Licensed under the BSD License.
 http://yuilibrary.com/license/
 */
-html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
 
 @font-face {
   font-family: 'Open Sans';
@@ -14,7 +15,7 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 }
 
 @font-face {
-  font-family: 'Open Sans Bold';
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 800;
   src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/EInbV5DfGHOiMmvb1Xr-hnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
@@ -37,14 +38,11 @@ ul.inline li {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-font-feature-settings: "liga=1, dlig=1";
-  -ms-font-feature-settings: "liga", "dlig";
-  -webkit-font-feature-settings: "liga", "dlig";
-  -o-font-feature-settings: "liga", "dlig";
-   font-feature-settings: "liga", "dlig";
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
    background:#FFF;
    color: #2f3133;
 }
@@ -82,7 +80,7 @@ header.other ul {
 
 header li {
   display: inline-block;
-  margin-right: 2%;
+  margin-right: 5px;
 }
 
 header li:last-child {
@@ -98,7 +96,7 @@ header h1, header h2 {
 }
 
 header h1 a:link, header h1 a:visited, header h1 a:hover {
-  font-family: 'Open Sans Bold', sans-serif;
+  font-weight: 800;
   color: #FFF;
   letter-spacing: -1px;
   text-transform: uppercase;
@@ -119,7 +117,7 @@ header.other h2 {
 a.download, a.download:visited {
   display: block;
   background: #2C3E50;
-  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   letter-spacing: 1px;
   color: #FFF;
   text-decoration: none;
@@ -153,7 +151,7 @@ header li a:hover {
 }
 
 #content h3 {
-  font-family: 'Open Sans Bold', 'Open Sans', serif;
+  font-weight: 800;
   margin-bottom: 15px;
 }
 
@@ -176,6 +174,7 @@ header li a:hover {
 
 #content code {
  font-family: 'Open Sans', Consolas, serif;
+ font-weight: 400;
  display: block;
  width: 50%;
  margin: 10px;
