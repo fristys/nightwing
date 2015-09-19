@@ -398,13 +398,13 @@
    }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .span-sm-12 {
     margin-left: 0;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1200px) {
   .span-md-12 {
     margin-left: 0;
   }
