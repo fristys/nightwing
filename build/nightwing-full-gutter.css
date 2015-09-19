@@ -391,3 +391,27 @@
     *width: 6.329787234042553%;
   }
 }
+
+@media (max-width: 768px) {
+   .span-xs-12 {
+     margin-left: 0;
+   }
+}
+
+@media (min-width: 768px) {
+  .span-sm-12 {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .span-md-12 {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .span-lg-12 {
+    margin-left: 0;
+  }
+}
