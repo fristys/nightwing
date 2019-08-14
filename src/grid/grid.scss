@@ -23,6 +23,14 @@
     clear: both;
   }
 
+  &.no-margin {
+    margin: 0;
+  }
+
+  &.no-width {
+    width: initial;
+  }
+
   &.direction-column {
     flex-direction: column;
     align-items: stretch;
