@@ -1,0 +1,57 @@
+$maxColumns: 12;
+
+$breakpoints: (
+  "sm": 544px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px
+);
+
+$containerSizes: (
+  "960": 960px,
+  "978": 978px,
+  "1020": 1020px,
+  "1140": 1140px,
+  "fluid": 100%,
+  "half": 50%
+);
+
+$helperProperties: (
+  "align-self": align-self,
+  "justify-self": justify-self
+);
+
+$helperValues: (
+  "align-self": (
+    "auto": auto,
+    "stretch": stretch,
+    "center": center,
+    "flex-start": flex-start,
+    "flex-end": flex-end,
+    "baseline": baseline,
+    "initial": initial,
+    "inherit": inherit
+  ),
+  "justify-self": (
+    "auto": auto,
+    "normal": normal,
+    "stretch": stretch,
+    "center": center,
+    "start": start,
+    "end": end,
+    "flex-start": flex-start,
+    "flex-end": flex-end,
+    "self-start": self-start,
+    "self-end": self-end,
+    "left": left,
+    "right": right,
+    "baseline": baseline,
+    "first-baseline": first baseline,
+    "last-baseline": last baseline,
+    "safe-center": safe center,
+    "unsafe-center": unsafe center,
+    "initial": initial,
+    "inherit": inherit,
+    "unset": unset
+  )
+);

@@ -1,0 +1,45 @@
+@import "../mixins";
+@import "../variables";
+
+.nw-row {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+
+  @each $key, $value in $containerSizes {
+    &.#{$key} {
+      width: $value;
+    }
+  }
+
+  &:before,
+  &:after {
+    clear: both;
+  }
+
+  &.direction-column {
+    flex-direction: column;
+    align-items: stretch;
+    height: 100%;
+  }
+
+  [class*="nw-col-"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 7.5px;
+  }
+
+  @include make-columns("");
+
+  @each $key, $value in $breakpoints {
+    @include respond-min($key) {
+      @include make-columns("-#{$key}");
+    }
+  }
+}

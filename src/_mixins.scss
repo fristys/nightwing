@@ -1,0 +1,31 @@
+@import "variables";
+
+@mixin respond-min($breakpoint) {
+  @media screen and (min-width: #{map-get($breakpoints, $breakpoint)}) {
+    @content;
+  }
+}
+
+@mixin make-columns($labelSuffix) {
+  @for $i from 1 through $maxColumns {
+    .nw-col#{$labelSuffix}-#{$i} {
+      flex: 0 0 percentage($i / $maxColumns);
+    }
+  }
+}
+
+@mixin makeHelpers($suffix) {
+  .nw-hidden#{$suffix} {
+    display: none !important;
+  }
+
+  @each $key, $value in $helperProperties {
+    $values: map-get($helperValues, #{$key});
+
+    @each $prop, $propVal in $values {
+      .nw-#{$key}-#{$prop}#{$suffix} {
+        #{$value}: $propVal !important;
+      }
+    }
+  }
+}
