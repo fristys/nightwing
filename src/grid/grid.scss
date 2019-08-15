@@ -1,7 +1,7 @@
 @import "../mixins";
 @import "../variables";
 
-.nw-row {
+.#{$classPrefix}-row {
   box-sizing: border-box;
   display: flex;
   flex: 0 1 auto;
@@ -37,7 +37,7 @@
     height: 100%;
   }
 
-  [class*="nw-col-"] {
+  [class*="#{$classPrefix}-col-"] {
     width: 100%;
     box-sizing: border-box;
     padding: 0 7.5px;

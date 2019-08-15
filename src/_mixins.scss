@@ -8,14 +8,14 @@
 
 @mixin make-columns($labelSuffix) {
   @for $i from 1 through $maxColumns {
-    .nw-col#{$labelSuffix}-#{$i} {
+    .#{$classPrefix}-col#{$labelSuffix}-#{$i} {
       flex: 0 0 percentage($i / $maxColumns);
     }
   }
 }
 
 @mixin makeHelpers($suffix) {
-  .nw-hidden#{$suffix} {
+  .#{$classPrefix}-hidden#{$suffix} {
     display: none !important;
   }
 
@@ -23,7 +23,7 @@
     $values: map-get($helperValues, #{$key});
 
     @each $prop, $propVal in $values {
-      .nw-#{$key}-#{$prop}#{$suffix} {
+      .#{$classPrefix}-#{$key}-#{$prop}#{$suffix} {
         #{$value}: $propVal !important;
       }
     }
