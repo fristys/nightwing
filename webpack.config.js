@@ -4,7 +4,11 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 const config = {
   mode: 'production',
-  entry: './src/index.scss',
+  entry: {
+    nightwing: './src/index.scss',
+    'nightwing-grid-only': './src/grid/grid.scss',
+    'nightwing-helpers-only': './src/grid/helpers.scss'
+  },
   output: {
     path: path.resolve(__dirname, 'dist')
   },
@@ -40,7 +44,7 @@ const config = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'nightwing.min.css',
+      filename: '[name].min.css',
       chunkFilename: '[id].[contenthash].min.css',
       allChunks: true
     }),

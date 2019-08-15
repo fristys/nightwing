@@ -5,7 +5,7 @@
   "description": "A super-versatile and lightweight 12 column CSS grid system",
   "scripts": {
     "start": "webpack --progress --profile --bail --watch",
-    "build": "rm -rf dist && webpack --progress --profile --bail && rm -rf dist/main.js"
+    "build": "rm -rf dist && webpack --progress --profile --bail && rm -rf dist/*.js"
   },
   "repository": {
     "type": "git",
