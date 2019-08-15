@@ -21,6 +21,7 @@ $containerSizes: (
 $helperProperties: (
   "flex-direction": flex-direction,
   "align-self": align-self,
+  "align-items": align-items,
   "justify-self": justify-self
 );
 
@@ -37,9 +38,14 @@ $helperValues: (
     "center": center,
     "flex-start": flex-start,
     "flex-end": flex-end,
-    "baseline": baseline,
-    "initial": initial,
-    "inherit": inherit
+    "baseline": baseline
+  ),
+  "align-items": (
+    "stretch": stretch,
+    "flex-start": "flex-start",
+    "flex-end": flex-end,
+    "center": center,
+    "baseline": baseline
   ),
   "justify-self": (
     "auto": auto,
@@ -59,8 +65,6 @@ $helperValues: (
     "last-baseline": last baseline,
     "safe-center": safe center,
     "unsafe-center": unsafe center,
-    "initial": initial,
-    "inherit": inherit,
     "unset": unset
   )
 );
