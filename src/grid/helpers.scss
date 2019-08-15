@@ -4,5 +4,7 @@
 @include makeHelpers("");
 
 @each $key, $value in $breakpoints {
-  @include makeHelpers("-#{$key}");
+  @include respond-min($key) {
+    @include makeHelpers("-#{$key}");
+  }
 }

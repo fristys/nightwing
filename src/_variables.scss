@@ -19,11 +19,18 @@ $containerSizes: (
 );
 
 $helperProperties: (
+  "flex-direction": flex-direction,
   "align-self": align-self,
   "justify-self": justify-self
 );
 
 $helperValues: (
+  "flex-direction": (
+    "row": row,
+    "row-reverse": row-reverse,
+    "column": column,
+    "column-reverse": column-reverse
+  ),
   "align-self": (
     "auto": auto,
     "stretch": stretch,
