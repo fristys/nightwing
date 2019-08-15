@@ -22,6 +22,7 @@ $helperProperties: (
   "flex-direction": flex-direction,
   "align-self": align-self,
   "align-items": align-items,
+  "align-content": align-content,
   "justify-self": justify-self
 );
 
@@ -46,6 +47,14 @@ $helperValues: (
     "flex-end": flex-end,
     "center": center,
     "baseline": baseline
+  ),
+  "align-content": (
+    "flex-start": flex-start,
+    "flex-end": flex-end,
+    "center": center,
+    "space-between": space-between,
+    "space-around": space-around,
+    "stretch": stretch
   ),
   "justify-self": (
     "auto": auto,
